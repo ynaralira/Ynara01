@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Portifolio | Ynara</title>
+</head>
+<body>
+     <!--Cabeçalho com logo e menus-->
+    <header>
+        <!--Logo-->
+        <img id="logo_ynara" src="logo_ynara.png" alt="logotipo com cores vermelho e preto, com nome escrito Ynara">
+        <!--Menus-->
+        <nav>
+            <ul class="menu">
+                <li class="menu_links"><a href="index.html">Home</a></li>
+                <li class="menu_links"><a href="">Sobre mim</a></li>
+                <li class="menu_links"><a href="">Skills</a></li>
+                <li class="menu_links"><a href="">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-principal">
+        <div class="box-principal">
+        <h1 id="titulo"></h1>
+        <p id="demo">Sou Desenvolvedora FullStack</p>
+        <span>Descobri minha paixão pela tecnologia com minha graduação de TSI, <br> com foco em desenvolvimento web venho estudando e realizando projetos pessoais</span>
+    </div>
+        <img id="img-banner" src="./img-banner.png" alt="">
+</div>
+
+<footer class="footer">
+    <div class="footer-primeiro">
+        <p>From <span id="local">Brasilia</span></p>
+    </div>
+    <div class="footer-segundo">
+        <ul class="footer-contatos">
+            <li class="li-contatos"><a href=""><i class="fi fi-brands-linkedin"></i></a></li>
+            <li class="li-contatos"><a href=""><i class="fi fi-brands-github"></i></a></li>
+            <li class="li-contatos"><a href=""><i class="fi fi-brands-instagram"></i></a></li>
+            <li class="li-contatos"><a href=""><i class="fi fi-rr-envelope"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+
+var i = 0;
+var txt = 'Olá me chamo Ynara!';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("titulo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();
+</script>
+</body>
+</html>
